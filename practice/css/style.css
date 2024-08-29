@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.grid-1 {
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.border {
+  padding: 20px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border: 5px dashed green;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
