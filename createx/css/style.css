@@ -1,3 +1,8 @@
+html, body {
+  font-family: Lato, sasns-serif;
+  color: #424551;
+}
+
 .wrapper {
   min-height: 100%;
   /* width: 100%; */
@@ -12,11 +17,23 @@
 
 .logo {}
 
-.button {}
+.button {
+  letter-spacing: 0.5;
+  font-weight: 700;
+  line-height: 52px;
+  padding: 0 40px;
+  color: #ffffff;
+  border-radius: 4px;
+  background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+}
 
 /*------------------------------------------------------------------------*/
+/* ограничительная линия, выше находятся основные блоки */
 
-.header {}
+.header {
+  font-weight: 700;
+
+}
 
 .header__top {}
 
@@ -26,7 +43,9 @@
   align-items: center;
 }
 
-.header__logo {}
+.header__logo {
+  margin-right: 60px;
+}
 
 .header__nav {
   margin-right: auto;
@@ -36,17 +55,29 @@
   display: flex;
 }
 
-.header__nav-item {}
+.header__nav-item {
+  margin-right: 40px;
+}
 
-.header__nav-link {}
+.header__nav-item:last-child {
+  margin-right: 0;
+}
 
-.header__btn-box {}
+
+.header__nav-link {
+  line-height: 1.6;
+}
+
+.header__btn-box {
+  display: flex;
+  align-items: center;
+}
 
 .header__top-btn {}
 
-.button {}
-
-.header__user {}
+.header__user-nav {
+  display: flex;
+}
 
 .header__user-btn {}
 
