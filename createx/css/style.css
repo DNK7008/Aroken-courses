@@ -38,6 +38,7 @@ html, body {
 .header__top {}
 
 .header__top-inner {
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,24 +64,50 @@ html, body {
   margin-right: 0;
 }
 
-
 .header__nav-link {
   line-height: 1.6;
+  white-space: nowrap;
+  transition: all .3s;
+}
+
+.header__nav-link:hover {
+  color: #ff3f3a;
 }
 
 .header__btn-box {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  gap: 36px;
 }
 
 .header__top-btn {}
 
 .header__user-nav {
-  display: flex;
+  position: relative;
+  padding-left: 28px;
 }
 
-.header__user-btn {}
+.header__user-nav::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  background: url("../images/icons/user-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
 
-.header_user-btn {}
+}
+
+.header__user-btn {
+  line-height: 1.6;
+  transition: all .3s;
+}
+
+.header__user-btn:hover {
+  color: #ff3f3a;
+}
 
 .header__body {}
