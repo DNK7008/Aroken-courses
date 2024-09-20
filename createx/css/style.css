@@ -25,6 +25,11 @@ html, body {
   color: #ffffff;
   border-radius: 4px;
   background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+  transition: .3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
 }
 
 /*------------------------------------------------------------------------*/
@@ -86,6 +91,8 @@ html, body {
 .header__user-nav {
   position: relative;
   padding-left: 28px;
+  transform: .3s;
+
 }
 
 .header__user-nav::before {
@@ -98,7 +105,6 @@ html, body {
   background: url("../images/icons/user-icon.svg") no-repeat;
   width: 20px;
   height: 20px;
-
 }
 
 .header__user-btn {
