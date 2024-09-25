@@ -5,7 +5,6 @@ html, body {
 
 .wrapper {
   min-height: 100%;
-  /* width: 100%; */
   overflow: hidden;
 }
 
@@ -13,6 +12,7 @@ html, body {
   max-width: 1260px;
   padding: 0 15px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .button {
@@ -57,7 +57,13 @@ html, body {
 /* header__top */
 .header {
   font-weight: 700;
-  background: linear-gradient(45deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+  background: url("/createx/images/decor/shapes-bg.svg") 50% 50% / cover no-repeat, linear-gradient(45deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+
 }
 
 .header__top {}
@@ -141,17 +147,25 @@ html, body {
 /* ################################################################### */
 /* header__body */
 
-.header__body {}
+.header__body {
+  flex: 1 1 auto;
+}
 
 .container {}
 
-.header__body-inner {}
+.header__body-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
 
 .header__main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #1e212c;
+  margin: auto 0;
 }
 
 .header__content {
@@ -196,6 +210,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   color: #1e212c;
+  margin-bottom: 80px;
 }
 
 .header__row>span {
