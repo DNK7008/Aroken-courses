@@ -232,3 +232,11 @@ html, body {
   font-size: 46px;
   line-height: 130%;
 }
+
+.fancybox-slide--video .fancybox-content {
+  width: 1300px;
+  height: 700px;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 0;
+}
