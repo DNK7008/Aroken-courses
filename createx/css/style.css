@@ -24,6 +24,11 @@ html, body {
   color: #fff;
   border-radius: 4px;
   background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+  white-space: nowrap;
+  transition: .3s;
+}
+.button:hover {
+  transform: scale(1.05);
 }
 
 .logo {}
@@ -41,6 +46,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+
 }
 
 .header__logo {
@@ -67,16 +74,48 @@ html, body {
 .header__nav_link {
   font-weight: 700;
   line-height: 1.6;
+  white-space: nowrap;
+  transition: all .3s;
+}
+
+.header__nav_link:hover {
+  color: #FF3F3A;
 }
 
 .header-btn-box {
   display: flex;
+  align-items: center;
 }
 
-.header__top-btn {}
+.header__top-btn {
+  margin-right: 36px;
+}
 
-.header__user {}
+.header__user-nav {
+  position: relative;
+  padding-left: 28px;
+}
 
-.header__user-btn {}
+.header__user-nav::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  background: url("../images/icons/user-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.header__user-btn {
+  white-space: nowrap;
+  line-height: 1.6;
+  transition: all .3s;
+}
+
+.header__user-btn:hover {
+  color: #FF3F3A;
+}
 
 .header__body {}
