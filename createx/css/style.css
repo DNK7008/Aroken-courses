@@ -13,10 +13,10 @@ html, body {
   max-width: 1260px;
   padding: 0 15px;
   margin: 0 auto;
-  border: 3px solid red;
 }
 
 .button {
+  display: inline-block;
   letter-spacing: 0.5px;
   line-height: 52px;
   font-weight: 700;
@@ -27,27 +27,34 @@ html, body {
   white-space: nowrap;
   transition: .3s;
 }
+
 .button:hover {
   transform: scale(1.05);
 }
 
-.logo {}
+.button--empty {
+  background-image: linear-gradient(to right, #ff3f3a, #f75e05);
+  /* Градиент для фона кнопки */
+  color: transparent;
+  /* Делает текст прозрачным */
+  border: 2px solid red;
+  /* Прозрачная рамка, чтобы градиент не накладывался на нее */
+  background-clip: text, border-box;
+  /* Обрезает фон по форме текста */
+  
+}
 
 /*______________________________________________________________________________________*/
-
 
 .header {
   font-weight: 700;
 }
-
-.header__top {}
 
 .header__top-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-
 }
 
 .header__logo {
