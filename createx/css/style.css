@@ -29,19 +29,41 @@ html, body {
 }
 
 .button:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .button--empty {
-  background-image: linear-gradient(to right, #ff3f3a, #f75e05);
-  /* Градиент для фона кнопки */
+  position: relative;
+  /* Необходим для позиционирования псевдоэлемента */
+  z-index: 1;
+  /* Кнопка должна быть поверх бордера */
+
+  /* Задаем градиент как фон */
+  background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+  /* Обрезаем фон по форме текста */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Делаем цвет текста прозрачным, чтобы был виден фон */
   color: transparent;
-  /* Делает текст прозрачным */
-  border: 2px solid red;
-  /* Прозрачная рамка, чтобы градиент не накладывался на нее */
-  background-clip: text, border-box;
-  /* Обрезает фон по форме текста */
-  
+}
+
+.button--empty::before {
+  content: '';
+  /* Обязательное свойство для псевдоэлемента */
+  position: absolute;
+  /* Позиционируем псевдоэлемент абсолютно */
+  inset: 0;
+  /* Растягиваем его на всю площадь кнопки */
+  padding: 1px;
+  /* Толщина бордера */
+  border-radius: 4px;
+  /* Скругление углов, если нужно */
+  background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  /* Помещаем псевдоэлемент под кнопку */
 }
 
 /*______________________________________________________________________________________*/
