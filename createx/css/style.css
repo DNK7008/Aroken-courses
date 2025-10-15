@@ -29,7 +29,7 @@ html, body {
 }
 
 .button:hover {
-  transform: scale(1.03);
+  transform: scale(1.07);
 }
 
 .button--empty {
@@ -70,6 +70,7 @@ html, body {
 
 .header {
   font-weight: 700;
+  background: linear-gradient(45deg, rgb(255, 63, 58, .2) 0%, rgb(247, 94, 5, .2) 100%);
 }
 
 .header__top-inner {
@@ -158,6 +159,7 @@ html, body {
 .header__body-inner {}
 
 .header__main {
+  margin-bottom: 189px;
   display: flex;
   justify-content: space-between;
   align-items: center;
