@@ -159,23 +159,43 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #1E212C;
 }
 
 .header__content {
   margin-right: 30px;
 }
 
-.header__play {}
+.header__play {
+  margin-bottom: 31px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__play svg {
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.header__play:hover svg {
+  box-shadow: 0 0 0 16px rgba(255, 63, 58, 0.12);
+}
 
 .header__title {
   font-weight: 900;
   font-size: 64px;
   line-height: 130%;
-  letter-spacing: 0.02em;
-  color: #1E212C;
+  letter-spacing: 1px;
+  min-width: 500px;
+  margin-bottom: 60px;
 }
 
-.header__content-buttons {}
+.header__content-buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 
 .header__content-btn {}
 
