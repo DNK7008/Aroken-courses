@@ -66,7 +66,7 @@ html, body {
   /* Помещаем псевдоэлемент под кнопку */
 }
 
-/*______________________________________________________________________________________*/
+/*___________________________________________HEADER TOP___________________________________________*/
 
 .header {
   font-weight: 700;
@@ -147,4 +147,42 @@ html, body {
   color: #FF3F3A;
 }
 
+/*_______________________________HEADER BODY__________________________________________________*/
+
 .header__body {}
+
+.container {}
+
+.header__body-inner {}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  margin-right: 30px;
+}
+
+.header__play {}
+
+.header__title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #1E212C;
+}
+
+.header__content-buttons {}
+
+.header__content-btn {}
+
+.button {}
+
+.button--empty {}
+
+.header__img {}
+
+.header__row {}
