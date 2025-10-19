@@ -67,6 +67,12 @@ html, body {
   /* Помещаем псевдоэлемент под кнопку */
 }
 
+.heading {}
+
+.heading__subtitle {}
+
+.heading__title {}
+
 /*___________________________________________HEADER TOP___________________________________________*/
 
 .header {
@@ -236,3 +242,29 @@ html, body {
   border-radius: 50%;
   margin: 0 15px;
 }
+
+/* ____________________________________________MAIN__________________ ______________________ */
+
+.about {}
+
+.about__inner {}
+
+.about__createx {}
+
+.about__createx-content {}
+
+.about__heading {}
+
+.heading__subtitle {}
+
+.heading__title {}
+
+.about__text {}
+
+.btn-box {}
+
+.about__btn {}
+
+.about__img {}
+
+.about__values {}
