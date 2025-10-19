@@ -249,7 +249,9 @@ html, body {
 
 .about__inner {}
 
-.about__createx {}
+.about__createx {
+  display: flex;
+}
 
 .about__createx-content {}
 
